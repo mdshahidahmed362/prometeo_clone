@@ -1,0 +1,552 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prometeo-business-online</title>
+<link rel="icon" href="img/logo_title.png" type="image/x-icon">
+<style type="text/css">
+::-webkit-scrollbar{ display:none;}
+@font-face{ font-family:prometeo_gothik; src:url(fonts/bebas-neue/BebasNeue.otf);}
+@font-face{ font-family:adobe_regular; src:url(fonts/AdobeHeitiStd-Regular.otf);}
+@font-face{ font-family:adobe_bold; src:url(fonts/AdobeGothicStd-Bold.otf);}
+@font-face{ font-family:corbel; src:url(fonts/corbel.ttf);}
+@font-face{ font-family:corbelb; src:url(fonts/corbelb.ttf)}
+
+*{ box-sizing:border-box;}
+#wrapper{
+	width: 100%;
+}
+#header{ width:100%; height:83px;}
+#horizontal_head{ background-color:#00339a; width:100%; height:3px; float:left; z-index:1;}
+
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+#slider{
+	width: 100%;
+	height: 600px;
+	float: left;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	z-index: -1;
+	background-size: cover;
+	margin-top: 0px;
+}
+#services{
+	width: 100%;
+	height: 1000px;
+	float: left;
+}
+#company_analysis{ width:100%; height:400px; float:left; background-image:url(img/phone.jpg); background-attachment:fixed; background-size:cover; background-repeat:no-repeat;}
+#recent_case{ width:100%; height:400px; float:left; background-color:#CCC;}
+#mission{
+	width: 100%;
+	height: 600px;
+	float: left;
+}
+#subscribe{
+	width: 100%;
+	height: 200px;
+	float: left;
+	background-attachment:scroll;
+	background-size:cover;
+	background-image:url(img/scene.jpg);
+	background-repeat: no-repeat;
+}
+#footer{
+	width: 100%;
+	height: 400px;
+	float: left;
+	background-color: #C69;
+	background-attachment: fixed;
+}
+#head_detail{ width:1200px; height:80px; margin-left:auto; margin-right:auto;}
+#logo{ width:545px; height:80px; float:left;}
+#logo_pic{
+	width: 45px;
+	height: 70px;
+	float: left;
+	padding-top: 10px;
+}
+#logo_name{
+	font-family: corbelb;
+	color: #000000;
+	font-size: 27px;
+	height: 55px;
+	width: 500px;
+	padding-top: 25px;
+}
+#menu_details{ width:645px; height:80px; float:left;}
+#menu_cart{
+	width: 645px;
+	height: 35px;
+	float: left;
+	font-family: corbel;
+	color: #666;
+	padding-top: 5px;
+}
+#menu_list{
+	width: 645px;
+	height: 40px;
+	float: left;
+	font-family: corbel;
+	font-size: 18px;
+}
+#menu_cart_detail{
+	width: 510px;
+	height: 30px;
+	float: left;
+	text-align: right;
+	padding-top: 10px;
+	font-size: 13px;
+}
+#menu_cart_pic{
+	width: 33px;
+	height: 35px;
+	float: left;
+	padding-top: 5px;
+	padding-left: 12px;
+}
+#menu_list{
+	width: 630px;
+	height: 30px;
+	float: left;
+	font-family: corbelb;
+	font-size: 16px;
+	text-align: right;
+	padding-top: 10px;
+	padding-right: 15px;
+}
+.slide{ background-size:cover;}
+#services_sub{ width:1200px; height:900px; margin-left:auto; margin-right:auto; margin-top:50px; margin-bottom:50px;}
+#services_header{ width:1200px; height:150px; float:left;}
+#services_features{ width:1200px; height:670px; float:left;}
+#services_buttons{ width:1200px; height:80px; float:left;}
+#services_header_horizontal{ font-family:corbelb; font-size:24px; text-align:center; color:#00339a; width:1200px; height:30px; float:left;}
+#services_header_heading{ font-family:corbel; font-size:36px; text-align:center; color:#000; width:1200px; height:60px; float:left;}
+#services_header_sub_heading{ font-family:corbel; font-size:20px; text-align:center; color:#666; width:1200px; height:30px; float:left;}
+#services_features_box{ width:386.66px; height:320px; float:left; }
+#services_features_box_sub{ width:356.66px; height:285px; float:left; margin-top:25px; margin-bottom:15px; margin-left:15px; margin-right:15px; box-shadow:2px 2px 10px rgba(153,153,153,1);}
+#services_features_box_sub:hover{
+	-webkit-transform: translate(-1px,-2px);
+	-moz-transform: translate(-1px,-2px);
+	-ms-transform: translate(-1px,-2px);
+	-o-transform: translate(-1px,-2px);
+	   transform: translate(-1px,-2px);
+	   box-shadow:2px 2px 15px rgba(102,102,102,1);}
+#services_features_box_sub_img{
+	width: 356.66px;
+	height: 138px;
+	margin-bottom: 10px;
+	float: left;
+	padding-top: 12px;
+}
+#services_features_box_sub_heading{width: 356.66px;
+	height: 40px;
+	font-family:corbel;
+	font-size:24px; text-align:center;
+	float: left; }
+#services_features_box_sub_sub_heading{
+	width: 316.66px;
+	height: 70px;
+	float: left;
+	text-align: center;
+	font-family: corbel;
+	font-size: 15px;
+	color:#666;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+#services_features_gap{ width:20px; height:320px; float:left;}
+.box {
+	position: relative;
+	padding-left: 115px;
+	width: 240px;
+}
+#services_buttons_main{ width:405px; height:40px; margin-left:auto; margin-right:auto; margin-top:30px;}
+#services_services{ width:190px; height:40px; float:left; background-color:#00339a; border-radius:5%; font-family:corbelb; font-size:16px; text-align:center; color:#fff; padding-top:8px;}
+#services_tour{
+	width: 190px;
+	height: 40px;
+	float: left;;
+	border-radius: 5%;
+	font-family: corbelb;
+	font-size: 16px;
+	text-align: center;
+	color: #00339a;
+	padding-top: 6px;
+	border: medium solid #00339a;
+}
+#services_button_gap{ width:25px; height:40px; padding-top:8px; float:left;}
+#services_services:hover {
+	background-color:#33b878;}
+#services_tour:hover {
+	background-color:#33b878;
+	padding-top: 9px;
+	color:#fff;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+}
+#company_analysis_sub{ width:1000px; height:200px; margin-left:auto; margin-right:auto; margin-top:100px; margin-bottom:100px;}
+#company_analysis_sub_bar{ width:1000px; height:20px; text-align:center; color:#00339a; float:left;
+	font-family: corbel;
+	font-size: 22px;}
+#company_analysis_sub_heading{
+	width: 1000px;
+	height: 60px;
+	float: left;
+	text-align: center;
+	color: #fff;
+	font-family: corbel;
+	font-size: 36px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+#company_analysis_sub_sub_heading{
+	width: 1000px;
+	height: 60px;
+	float: left;
+	text-align: center;
+	color: #fff;
+	font-family:corbel;
+	font-size: 16px;
+	padding-top:10px;
+	padding-bottom: 15px;
+}
+#company_analysis_subscription{ width:1000px; height:60px; float:left; padding-top:5px; padding-bottom:10px;}
+#company_analysis_subscription_sub{ width:510px; height:45px; margin-left:auto; margin-right:auto;}
+.your_name {
+	height: 45px;
+	width: 200px;
+	font-family: corbel;
+	font-size: 16px;
+	color: #999;
+	border-radius: 5px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+}
+.company_analysis_button {
+	width: 100px;
+	height: 45px;
+	font-family: corbelb;
+	color: #fff;
+	background-color: #00339a;
+	font-size: 14px;
+	border-radius: 5px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+}
+.company_analysis_button:hover{
+	background-color: #33b878;}
+#mission_sub{ width:1200px; height:530px; margin-left:auto; margin-right:auto; margin-top:70px;}
+#mission_img{ margin-left:20px; widows:580px; height:530px; float:left;}
+#mission_main{ width:530px; height:460px; float:left; margin-right:70px; margin-bottom:70px;}
+#mission _bar{ font-size:18px; width:530px; height:20px; color:#00339a; float:left;}
+#mission_heading{ width:530px; height:50px; float:left; font-family:corbel; font-size:36px;}
+#mission_sub_heading{ width:530px; height:20px; font-family:corbel; font-size:17px; color:#333; float:left;}
+#mission_gap{ width:530px; height:25px; float:left;}
+#mission_detail{
+	width: 530px;
+	height: 60px;
+	float: left;
+	font-family: corbel;
+	font-size: 19px;
+	color: #666;
+}
+#mission_list{
+	width: 530px;
+	height: 280px;
+	float: left;
+	padding-top: -20px;
+}
+.tick{
+	font-family: corbel;
+	color: #000;
+	font-size: 22px;
+	height: 25px;
+	width: 530px;
+	list-style-image: url(img/tick.png);
+	text-align: justify;
+}
+.no_tick{
+	font-family: corbel;
+	font-size: 18px;
+	color: #666;
+	list-style-image: none;
+	width: 530px;
+	height: 64px;
+	padding-top: 4px;
+}
+.main_tick {
+	list-style-image: none;
+	list-style-type: none;
+}
+#subscribe_sub{ width:1200px; height:100px; margin-left:auto; margin-right:auto; margin-top:50px; margin-bottom:50px;}
+#subscribe_heading{ width:1200px; height:50px; float:left; text-align:center; font-family:corbel; font-size:33px; color:#fff;}
+#subscribe_button{ width:1200px; height:50px; float:left;}
+#subscribe_btn{ width:500px; height:50px; margin-left:auto; margin-right:auto;}
+.subscribe_usr {
+	font-family: corbel;
+	height: 50px;
+	width: 350px;
+	color: #999;
+	font-size: 16px;
+	margin: 0px;
+	border-radius: 10px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+}
+.subscribe_btn2 {
+	font-family: corbelb;
+	height: 50px;
+	width: 146px;
+	font-size: 16px;
+	color: #FFF;
+	background-color: #00339a;
+	border-radius: 10px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+}
+.subscribe_btn2:hover {
+	background-color: #33b878;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+   <div id="header">
+     <div id="horizontal_head"></div>
+     
+     <div id="head_detail">
+           <div id="logo">
+                <div id="logo_pic"><img src="img/logo.png" width="40px" height="60px" /></div>
+                <div id="logo_name">PROMETEO</div>
+       </div>
+           <div id="menu_details">
+             <div id="menu_cart">
+               <div id="menu_cart_detail">PURCHASE THIS TEMPLATE</div>
+                <div id="menu_cart_pic"><img src="img/lock.png" height="25px" width="18px" /></div>
+          <div id="menu_cart_pic"><img src="img/purchase_bag.png" height="25px" width="20px" /></div>
+                <div id="menu_cart_pic"><img src="img/search.png" height="25px" width="25px" /></div>
+             </div>
+              <div id="menu_list">HOME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SERVICES &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ABOUT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OTHER PAGES &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PRICING &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BLOG &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CONTACT</div>
+           </div>     
+     </div>
+   
+   </div><!--header closed-->
+   <div id="slider" class="slide">
+   <iframe scrolling="no" frameborder="0" src="slider/slider.html" width="100%" height="600px" ></iframe>
+   </div><!--slider closed-->
+   <div id="services">
+       <div id="services_sub">
+	       <div id="services_header">
+	         <div id="services_header_horizontal">___</div>
+             <div id="services_header_heading">DISCOVER OUR SERVICES</div>
+             <div id="services_header_sub_heading">Curabitur quam etsum lacus etsumis</div>
+		   </div>
+         <div id="services_features">
+           <div id="services_features_box">
+                  <div id="services_features_box_sub">
+                     <div id="services_features_box_sub_img">
+                           <img class="box" src="img/business_growth.png" width="120px" height="120px" /></div>
+                      <div id="services_features_box_sub_heading">
+                      Business Growth
+                      </div>
+                      <div id="services_features_box_sub_sub_heading">
+                      Prompta inciderint dissentiunt ea duo. Suas navi torqu atos at sit, mei alia utinam persecuti in. An his el.
+                      </div>
+                  
+                  </div>               
+           </div>
+           <div id="services_features_gap"></div>
+           
+           <div id="services_features_box">
+                  <div id="services_features_box_sub">
+                     <div id="services_features_box_sub_img">
+                       <img class="box" src="img/focus_on_target.png" width="120px" height="120px" /></div>
+                      <div id="services_features_box_sub_heading">
+                      Focus on Target
+                      </div>
+                      <div id="services_features_box_sub_sub_heading">
+                      Prompta inciderint dissentiunt ea duo. Suas navi torqu atos at sit, mei alia utinam persecuti in. An his el.
+                      </div>
+                  
+                  </div>               
+           </div>
+           <div id="services_features_gap"></div>
+           
+           <div id="services_features_box">
+                  <div id="services_features_box_sub">
+                     <div id="services_features_box_sub_img">
+                       <img class="box" src="img/quality_services.png" width="120px" height="120px" /></div>
+                      <div id="services_features_box_sub_heading">
+                      Quality Services
+                      </div>
+                      <div id="services_features_box_sub_sub_heading">
+                      Prompta inciderint dissentiunt ea duo. Suas navi torqu atos at sit, mei alia utinam persecuti in. An his el.
+                      </div>
+                  
+                  </div>               
+           </div>
+               
+               <div id="services_features_box">
+                  <div id="services_features_box_sub">
+                     <div id="services_features_box_sub_img">
+                       <img class="box" src="img/advanced_analytics.png" width="120px" height="120px" /></div>
+                      <div id="services_features_box_sub_heading">
+                      Advanced Analytics
+                      </div>
+                      <div id="services_features_box_sub_sub_heading">
+                      Prompta inciderint dissentiunt ea duo. Suas navi torqu atos at sit, mei alia utinam persecuti in. An his el.
+                      </div>
+                  
+                  </div>               
+               </div>
+           <div id="services_features_gap"></div>
+           
+           <div id="services_features_box">
+                  <div id="services_features_box_sub">
+                     <div id="services_features_box_sub_img">
+                       <img class="box" src="img/performance_monetring.png" width="120px" height="120px" /></div>
+                      <div id="services_features_box_sub_heading">
+                      Performance Monitoring
+                      </div>
+                      <div id="services_features_box_sub_sub_heading">
+                      Prompta inciderint dissentiunt ea duo. Suas navi torqu atos at sit, mei alia utinam persecuti in. An his el.
+                      </div>
+                  
+                  </div>               
+           </div>
+           <div id="services_features_gap"></div>
+           
+           <div id="services_features_box">
+                  <div id="services_features_box_sub">
+                     <div id="services_features_box_sub_img">
+                       <img class="box" src="img/organisation_and_tutor.png" width="120px" height="120px" /></div>
+                      <div id="services_features_box_sub_heading">
+                      Organization and tutor
+                      </div>
+                      <div id="services_features_box_sub_sub_heading">
+                      Prompta inciderint dissentiunt ea duo. Suas navi torqu atos at sit, mei alia utinam persecuti in. An his el.
+                      </div>
+                  
+                  </div>               
+           </div>
+           
+         </div>
+           
+         <div id="services_buttons">
+              <div id="services_buttons_main">
+                <div id="services_services">
+                    VIEW ALL SERVICES
+                </div>
+                    <div id="services_button_gap"></div>
+                    <div id="services_tour">
+                    VIEW SERVICES TOUR
+                    </div>              
+           </div>               
+         </div>       
+       
+       
+     </div>
+   </div><!--services closed-->
+   
+   <div id="company_analysis">
+       <div id="company_analysis_sub">
+         <div id="company_analysis_sub_bar">___</div>
+         <div id="company_analysis_sub_heading">
+           FREE COMPANY ANALYSIS</div>
+           <div id="company_analysis_sub_sub_heading">
+           Prompta inciderint dissentiunt ea duo. Suas nominavi torquatos at sit, mei alia utinam persecuti in. <br />An his elitr tractatos. Pri eu liber oratio repudiare, populo animal vivendo nam ne.
+           </div>
+           
+         <div id="company_analysis_subscription">
+              <div id="company_analysis_subscription_sub">
+              <form>
+                <input class="your_name" type="text" value="Your Name" />
+                <input class="your_name" type="text" value="Your Email Address" />
+                <input class="company_analysis_button" type="button" value="SUBMIT" />
+              
+              </form> 
+              </div>         
+         </div>       
+     </div>
+   </div><!--company analysis closed-->
+   
+   <div id="recent_case">
+      
+   </div><!--recent case close-->
+   
+   <div id="mission">
+     <div id="mission_sub">
+      <div id="mission_main">
+         <div id="mission_bar">___</div>
+       <div id="mission_heading">MISSION AND STRATAGEY</div>
+       <div id="mission_sub_heading">Curabitur quam etsum lacus etsumis</div>
+       <div id="mission_gap"></div>
+<div id="mission_detail">Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, ne mel lorem legendos.</div>
+<div id="mission_gap"></div>
+       
+       <div id="mission_list">
+       <ol class="main_tick">
+       <li class="tick">Suas summo id sed erat erant oporteat</li>
+<li class="no_tick">Ut unum diceret eos, mel cu velit principes, ut quo inani dolorem mediocritatem. Mea in justo posidonium necessitatibus.</li>
+<li class="tick">Illud singulis indoctum ad sed</li>
+<li class="no_tick">Ut unum diceret eos, mel cu velit principes, ut quo inani dolorem mediocritatem. Mea in justo posidonium necessitatibus.</li>
+<li class="tick">Alterum bonorum mentitum an mel</li>
+<li class="no_tick">Ut unum diceret eos, mel cu velit principes, ut quo inani dolorem mediocritatem. Mea in justo posidonium necessitatibus.</li>
+           </ol>
+       
+       </div>
+      
+      </div>
+      
+      <div id="mission_img">
+        <img src="img/mission pic.jpg" />
+      </div>
+    </div>
+   </div><!--mission-->
+   
+   <div id="subscribe">
+     <div id="subscribe_sub">
+         <div id="subscribe_heading">Subscribe to our Newsletter for latest news.</div>
+         <div id="subscribe_button">
+           <div id="subscribe_btn">
+             <form>
+               <input class="subscribe_usr" type="text" value="Your Email" />
+               <input type="button" class="subscribe_btn2" value="SUBSCRIBE" />
+             </form>
+           </div>            
+       </div>      
+      </div>   
+   </div><!--subscribe ends-->
+   
+   <div id="footer">
+   
+   </div><!--footer ends-->
+
+</div><!--wrapper ends-->
+</body>
+</html>
